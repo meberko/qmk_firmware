@@ -21,14 +21,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x000D
-#define PRODUCT_ID      0x0700
+#define PRODUCT_ID      0x1969
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    D
-#define PRODUCT         Hestia
+#define MANUFACTURER    Mouser
+#define PRODUCT         Space80 PKRGB
 
 /* key matrix size */
-#define MATRIX_ROWS 12
-#define MATRIX_COLS 9
+#define MATRIX_ROWS 6
+#define MATRIX_COLS 17
 
 /*
  * Keyboard Matrix Assignments
@@ -40,14 +40,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
-#define MATRIX_ROW_PINS { F5, F4, F0, F1, F6, F7, D4, D5, D3, D2, D1, D0 }
-#define MATRIX_COL_PINS { C7, C6, B6, B5, B4, D6, D7, B1, B2 }
+#define MATRIX_ROW_PINS { B3, D2, C12, A6, A5, A4 }
+#define MATRIX_COL_PINS { C8, C9, A8, A10, C7, C6, B14, B12, B10, B1, C5, C4, A7, B8, C11, C10, A14 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
 
-#define LED_CAPS_LOCK_PIN B3
+//#define LED_CAPS_LOCK_PIN B3
 //#define LED_SCROLL_LOCK_PIN B2
 //#define LED_PIN_ON_STATE 0
 
@@ -62,7 +62,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #define RGBLIGHT_HUE_STEP 8
   #define RGBLIGHT_SAT_STEP 8
   #define RGBLIGHT_VAL_STEP 8
-  #define RGBLIGHT_LIMIT_VAL 200 /* The maximum brightness level */
+  #define RGBLIGHT_LIMIT_VAL 50 /* The maximum brightness level */
   #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
 /*== all animations enable ==*/
   #define RGBLIGHT_ANIMATIONS
